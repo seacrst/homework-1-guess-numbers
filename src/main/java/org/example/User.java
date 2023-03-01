@@ -3,6 +3,7 @@ package org.example;
 import java.util.Scanner;
 
 public class User {
+    public static Scanner scanner = new Scanner(System.in);
     public static void welcome(String str) {
         User.message(str);
     }
@@ -12,8 +13,7 @@ public class User {
     }
 
     public static String inputString() {
-        Scanner scanner = new Scanner(System.in);
-        return scanner.nextLine();
+        return User.scanner.nextLine();
     }
 
     public static int inputNumber() {
